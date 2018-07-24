@@ -22,9 +22,9 @@ public class EmployeeController {
         return employeeService.getEmployee();
     }
 
-//    @DeleteMapping("/employees")
-//    public List<Employee> delEmployees(int  id){
-//        return employeeService.delEmployee(id);
-//    }
+    @DeleteMapping("/employees/{id}")
+    public Employee delEmployees(@PathVariable int  id){
+        return employeeService.delEmployee(id);
+    }
 
 }
