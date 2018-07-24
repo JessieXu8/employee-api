@@ -42,4 +42,11 @@ public class EmployeeService {
         }
         return null;
     }
+
+    public Employee findEmployee(int id) {
+        if(employees.containsKey(id)){
+            return employees.get(id);
+        }
+        return null;
+    }
 }
